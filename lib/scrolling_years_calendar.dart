@@ -24,7 +24,8 @@ class ScrollingYearsCalendar extends StatefulWidget {
         assert(!firstDate.isAfter(lastDate),
             'lastDate must be on or after firstDate'),
         assert(
-            monthNames == null || monthNames.length == DateTime.monthsPerYear);
+            monthNames == null || monthNames.length == DateTime.monthsPerYear,
+        'monthNames is not null and the list must have 12 month names');
 
   final BuildContext context;
   final DateTime initialDate;
