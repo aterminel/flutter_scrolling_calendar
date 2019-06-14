@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
           context: context,
           initialDate: DateTime.now(),
           firstDate: DateTime.now().subtract(Duration(days: 5 * 365)),
-          lastDate: DateTime.now(),
+          lastDate: DateTime.now().add(Duration(days: 365)),
 
           // Optional properties
           todayColor: Colors.blue,
